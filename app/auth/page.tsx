@@ -15,7 +15,7 @@ function page() {
             </h2>
           </div>
           <div>
-            <h1 className="font-bold text-4xl"> Get Started</h1>
+            <h1 className="font-bold text-4xl mb-10"> Get Started</h1>
             <Auth />
           </div>
         </div>
