@@ -1,4 +1,6 @@
 "use client";
+
+import { Input } from "postcss";
 import React, { useCallback, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 
@@ -27,16 +29,26 @@ function Auth() {
     },
   });
 
-  const onSubmit:SubmitHandler<FieldValues> =(data) =>{
-    setIseLoading(true)
-    if (variant==='REGISTER') {
-        //axios Register
+  const onSubmit: SubmitHandler<FieldValues> = (data) => {
+    setIseLoading(true);
+    if (variant === "REGISTER") {
+      //axios Register
     }
-    if(variant ==="LOGIN"){
-        //NEXTAuth SignIN
+    if (variant === "LOGIN") {
+      //NEXTAuth SignIN
     }
-  }
-  return <div>Auth</div>;
+  };
+
+  const socialAction = (action: string) => {
+    setIseLoading(true);
+    //NextAuth Social Login
+  };
+  return (
+    <div>
+      <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
+      </form>
+    </div>
+  );
 }
 
 export default Auth;
