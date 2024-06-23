@@ -20,7 +20,7 @@ function page() {
           </div>
         </div>
         <Image
-          src="/login.png"
+          src="/log.jpg"
           width="500"
           height="800"
           className=" rounded-2xl"
