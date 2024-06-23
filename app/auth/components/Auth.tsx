@@ -1,11 +1,10 @@
-import React from 'react'
+"use client";
+import React, { useState } from "react";
 
-type Props = {}
-
-function Auth({}: Props) {
-  return (
-    <div>test</div>
-  )
+type Variant = "LOGIN" | "REGISTER";
+function Auth() {
+  const [variant, setVariant] = useState<Variant>("LOGIN");
+  return <div>Auth</div>;
 }
 
-export default Auth
+export default Auth;
