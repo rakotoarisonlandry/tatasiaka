@@ -19,7 +19,8 @@ const HeaderContent = () => {
           src="/cloud.png"
           width="100"
           height="100"
-          alt="header illusatraion"
+          alt="header illusatraion "
+          className="animate-pulse"
         />
       </span>
       <div className=" absolute right-16 justify-around ">
