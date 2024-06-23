@@ -24,9 +24,9 @@ const NavBar = () => {
           }`}
           href="/"
         >
-          Product
+          Home
         </Link>
-        <Link href={""}>Princing</Link>
+        <Link href={""}>About</Link>
         <Link href={""}>Downloads</Link>
         <Link href={""}>Contacts</Link>
       </div>
