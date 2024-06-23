@@ -1,9 +1,9 @@
 "use client";
 
-import { Input } from "postcss";
 import React, { useCallback, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
-
+import Input from "../../components/inputs/Input";
+import clsx from "clsx";
 type Variant = "LOGIN" | "REGISTER";
 function Auth() {
   const [variant, setVariant] = useState<Variant>("LOGIN");
@@ -46,6 +46,7 @@ function Auth() {
   return (
     <div>
       <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
+        <Input label="email" register={register} id="email" errors={errors}/>
       </form>
     </div>
   );
